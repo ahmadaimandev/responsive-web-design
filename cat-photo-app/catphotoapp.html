@@ -87,7 +87,26 @@
                 <!-- add name attribute and assign it a value to represent the data is being submitted -->
                 <!-- placeholder is used to give people hint about what kind of information to enter -->
                 <!-- required attribute use to prevent from user submitting form when information is missing -->
-                <input type="radio">
+                <!-- Label elements are used to associate the text for an input element -->
+                <!-- id attribute to identify specific HTML elements -->
+                <!-- 
+                - fieldset elements used to group related input and labels together in a web form
+                - fieldset elements are block elements, meaning they appear on a new line
+                -->
+                <!-- First Fieldset Start -->
+                <fieldset>
+                    <!-- Legend element act as a caption for the content in the fieldset elements -->
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor">Indoor</label>
+                    <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+                </fieldset>
+                <!-- First Fieldset End -->
+
+                <!-- Second Fieldset Start -->
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                </fieldset>
+                <!-- Second Fieldset End -->
                 <input type="text" name="catphotourl" placeholder="cat photo url" required>
                 <button type="submit">Submit</button>
             </form>
