@@ -97,7 +97,7 @@
                 <fieldset>
                     <!-- Legend element act as a caption for the content in the fieldset elements -->
                     <legend>Is your cat an indoor or outdoor cat?</legend>
-                    <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor">Indoor</label>
+                    <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label>
                     <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
                 </fieldset>
                 <!-- First Fieldset End -->
@@ -105,6 +105,12 @@
                 <!-- Second Fieldset Start -->
                 <fieldset>
                     <legend>What's your cat's personality?</legend>
+                    <!-- Use checked attribute to make the value default checked -->
+                    <input type="checkbox" name="personality" id="loving" value="loving" checked> <label
+                        for="loving">Loving</label>
+                    <input type="checkbox" name="personality" id="lazy" value="lazy"> <label for="lazy">Lazy</label>
+                    <input type="checkbox" name="personality" id="energetic" value="energetic"> <label
+                        for="energetic">Energetic</label>
                 </fieldset>
                 <!-- Second Fieldset End -->
                 <input type="text" name="catphotourl" placeholder="cat photo url" required>
@@ -114,7 +120,19 @@
         </section>
         <!-- Third Section End -->
     </main>
-
+    <!-- Footer Start -->
+     <!-- 
+    - Footer element to defined a footer for a document or section
+    - Information in footer:
+    1. Author of the document
+    2. Copyright data
+    3. Links term of use 
+    4. Contact information and more
+    -->
+    <footer>
+        <p>No Copyright - freeCodeCamp.org</p>
+    </footer>
+    <!-- Footer End -->
 </body>
 
 </html>
