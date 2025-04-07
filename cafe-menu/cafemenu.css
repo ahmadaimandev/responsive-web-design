@@ -7,6 +7,8 @@ p {
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
+    /* Add Spacing */
+    padding: 20px;
 }
 
 h1 {
@@ -36,6 +38,10 @@ hr {
     border-color: brown;
 }
 
+.bottom-line {
+    margin-bottom: 25px;
+}
+
 .flavor,
 .dessert {
     text-align: left;
@@ -52,6 +58,33 @@ h2 {
     width: 25%;
 }
 
+/* FOOTER */
+footer {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+/* Change the properties of link when the link has actually been visited */
+a:visited {
+    color: grey;
+}
+
+/* Change the properties of a link when the mouse hovers them */
+a:hover {
+    color: brown
+}
+
+/* Change the properties of a link  when the link is actually being clicked */
+a:active {
+    color: white;
+}
+
 .item p {
     display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
